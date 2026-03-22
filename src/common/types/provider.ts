@@ -49,7 +49,10 @@ export type ApiKeyProvider =
   | 'fireworks'
   | 'groq'
   | 'venice'
-  | 'elevenlabs';
+  | 'elevenlabs'
+  | 'aws-agentcore'
+  | 'browserbase'
+  | 'steel';
 
 /**
  * Providers that accept API key storage via the setApiKey IPC handler.
@@ -78,6 +81,9 @@ export const ALLOWED_API_KEY_PROVIDERS: ReadonlySet<string> = new Set<string>([
   'groq',
   'venice',
   'elevenlabs',
+  'aws-agentcore',
+  'browserbase',
+  'steel',
 ]);
 
 /**
